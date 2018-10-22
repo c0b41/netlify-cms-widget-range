@@ -1,0 +1,24 @@
+{
+  "name": "netlify-cms-widget-range",
+  "version": "1.0.0",
+  "description": "Netlify cms range widget",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "babel ./src --out-dir ./dist"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0"
+  },
+  "repository": "https://github.com/c0b41/netlify-cms-widget-range",
+  "author": "c0b41",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.5.2"
+  }
+}
