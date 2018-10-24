@@ -4,7 +4,7 @@ import 'netlify-cms/dist/cms.css'
 import {
   netlifyCmsRangeControl,
   netlifyCmsRangePreview
-} from '../../dist/index'
+} from '../../src/index'
 
 const config = {
     backend: {

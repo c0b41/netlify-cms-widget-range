@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default () => {
+export default (props) => {
   const {
     forID,
     value,
@@ -9,8 +9,7 @@ export default () => {
     setActiveStyle,
     setInactiveStyle,
     field,
-    ...others
-  } = this.props
+  } = props
 
   return (
     <div
@@ -21,7 +20,6 @@ export default () => {
     >
       <input
         type="range"
-        {...others}
         value={value || ''}
         onChange={(e) => onChange(e.target.value)}
         style={{ width: field.get('width') || 'auto' }}
